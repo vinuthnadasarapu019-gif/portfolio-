@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinuthna Dasarapu — AI Engineer · Hyderabad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,500&family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═════════ LOADER ═════════ -->
+  <div class="loader" id="loader">
+    <div class="loader-grid"></div>
+    <div class="loader-content">
+      <span class="loader-name"><em>V</em>inuthna</span>
+      <span class="loader-count"><span id="loadNum">0</span><small>%</small></span>
+    </div>
+  </div>
+
+  <!-- ═════════ CURSOR ═════════ -->
+  <div class="cursor" id="cursor">
+    <span class="cur-inner"></span>
+    <span class="cur-label" id="curLabel"></span>
+  </div>
+
+  <!-- ═════════ AURORA BG ═════════ -->
+  <div class="aurora">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+  <div class="noise"></div>
+  <div class="vignette"></div>
+
+  <!-- ═════════ FLOATING CHIPS ═════════ -->
+  <div class="float-chip chip-time" id="chipTime">
+    <span class="cd"></span>
+    <span id="liveTime">00:00</span>
+    <em>IST</em>
+  </div>
+  <div class="float-chip chip-loc">Hyderabad, India · 17.38°N</div>
+
+  <!-- ═════════ NAV ═════════ -->
+  <header id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-glyph"><em>V</em>D</span>
+        <span class="brand-txt">Vinuthna Dasarapu<small>AI · ML · Engineer</small></span>
+      </a>
+      <nav class="nav-pills">
+        <a href="#work"><span>Work</span></a>
+        <a href="#about"><span>About</span></a>
+        <a href="#skills"><span>Skills</span></a>
+        <a href="#journey"><span>Journey</span></a>
+      </nav>
+      <a href="mailto:vinuthnadasarapu019@gmail.com" class="nav-cta">
+        <span class="ncta-dot"></span>
+        <span>Available for work</span>
+        <span class="ncta-arrow">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ═════════ HERO ═════════ -->
+  <section id="top" class="hero">
+    <div class="hero-top-line">
+      <span>B.Tech · Artificial Intelligence</span>
+    </div>
+
+    <div class="hero-stage">
+      <h1 class="hero-title">
+        <span class="ht-line"><span class="ht-word" data-word="VINUTHNA">VINUTHNA</span></span>
+        <span class="ht-line ht-line-2">
+          <span class="ht-word" data-word="DASARAPU">DASARAPU</span>
+          <em class="ht-italic">portfolio</em>
+        </span>
+      </h1>
+
+      <!-- Floating cards over the title -->
+      <div class="f-card fc-avatar">
+        <div class="fc-avatar-art">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <defs>
+              <linearGradient id="avGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffb86b"/>
+                <stop offset="1" stop-color="#ff6b6b"/>
+              </linearGradient>
+            </defs>
+            <circle cx="60" cy="60" r="58" fill="url(#avGrad)"/>
+            <circle cx="60" cy="48" r="18" fill="rgba(10,9,8,0.85)"/>
+            <path d="M20 108 C 30 78, 90 78, 100 108 Z" fill="rgba(10,9,8,0.85)"/>
+          </svg>
+        </div>
+        <div class="fc-avatar-meta">
+          <strong>Vinuthna D.</strong>
+          <span>AI / ML Student</span>
+        </div>
+      </div>
+
+      <div class="f-card fc-status">
+        <span class="fc-s-label">Now</span>
+        <span class="fc-s-main">Building ML systems</span>
+        <div class="fc-s-meter">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span class="on"></span><span class="on"></span><span class="on"></span>
+          <span class="on"></span><span class="on"></span>
+          <span class="on"></span><span class="on"></span>
+        </div>
+      </div>
+
+      <div class="f-card fc-metric">
+        <span class="fc-m-big">90<em>%</em></span>
+        <span class="fc-m-label">Best model<br/>accuracy</span>
+      </div>
+
+      <div class="f-card fc-tag">
+        <span class="fc-t-tag">Badminton</span>
+        <span class="fc-t-tag">Mahindra Univ.</span>
+        <span class="fc-t-tag">Machine Learning</span>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <div class="hf-col">
+        <span class="hf-lbl">— Currently</span>
+        <p>B.Tech in Artificial Intelligence at Mahindra University. Building machine-learning models across HR analytics, water quality, and recruitment AI.</p>
+      </div>
+      <div class="hf-col">
+        <span class="hf-lbl">— Contact</span>
+        <p>
+          <a href="mailto:vinuthnadasarapu019@gmail.com">vinuthnadasarapu019@gmail.com</a>
+        </p>
+      </div>
+      <div class="hf-col hf-cta">
+        <a href="#work" class="big-btn">
+          <span class="bb-bg"></span>
+          <span class="bb-text">See selected work</span>
+          <span class="bb-arrow">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </span>
+        </a>
+        <a href="#contact" class="ghost-btn">Drop a message</a>
+      </div>
+    </div>
+
+    <div class="scroll-ind">
+      <span class="si-dot"></span>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ═════════ MARQUEE ═════════ -->
+  <div class="mar">
+    <div class="mar-track">
+      <span><em>Machine Learning</em></span><span class="mar-dot">✦</span>
+      <span>Data Science</span><span class="mar-dot">✦</span>
+      <span><em>Flask &amp; Python</em></span><span class="mar-dot">✦</span>
+      <span>Predictive Models</span><span class="mar-dot">✦</span>
+      <span><em>TensorFlow</em></span><span class="mar-dot">✦</span>
+      <span>Scikit-learn</span><span class="mar-dot">✦</span>
+      <span><em>XGBoost</em></span><span class="mar-dot">✦</span>
+      <span>Tableau</span><span class="mar-dot">✦</span>
+      <span><em>Machine Learning</em></span><span class="mar-dot">✦</span>
+      <span>Data Science</span><span class="mar-dot">✦</span>
+      <span><em>Flask &amp; Python</em></span><span class="mar-dot">✦</span>
+      <span>Predictive Models</span><span class="mar-dot">✦</span>
+      <span><em>TensorFlow</em></span><span class="mar-dot">✦</span>
+      <span>Scikit-learn</span><span class="mar-dot">✦</span>
+      <span><em>XGBoost</em></span><span class="mar-dot">✦</span>
+      <span>Tableau</span><span class="mar-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ═════════ ABOUT (BENTO) ═════════ -->
+  <section id="about" class="about">
+    <div class="sec-head">
+      <span class="sec-num">( 01 / About )</span>
+      <h2 class="sec-title">A curious mind,<br/><em>rigorous</em> about data.</h2>
+    </div>
+
+    <div class="bento">
+      <div class="b b-lede">
+        <p>I'm a second-year B.Tech student in AI at <em>Mahindra University</em>. I build ML models that tackle real-world problems — from predicting why employees leave, to classifying whether water is safe to drink, to matching candidates with the right role.</p>
+        <p>Quiet discipline, honest evaluation, and thoughtful preprocessing matter more to me than chasing the biggest model. I love when a simple pipeline answers a real question.</p>
+      </div>
+
+      <div class="b b-id">
+        <div class="b-id-head">ID · 2026/01</div>
+        <div class="b-id-mono">
+          <div><span>Name</span>Vinuthna Dasarapu</div>
+          <div><span>Role</span>AI · ML Engineer</div>
+          <div><span>Based</span>Hyderabad, IN</div>
+          <div><span>Uni</span>Mahindra University</div>
+          <div><span>Year</span>Sophomore · 2023–</div>
+          <div><span>CGPA</span>5.2</div>
+        </div>
+      </div>
+
+      <div class="b b-count">
+        <span class="b-count-big" data-count="3">0</span>
+        <span class="b-count-lbl">Shipped<br/>ML projects</span>
+      </div>
+
+      <div class="b b-count alt">
+        <span class="b-count-big"><span data-count="8">0</span><em>+</em></span>
+        <span class="b-count-lbl">Technologies<br/>in the stack</span>
+      </div>
+
+      <div class="b b-quote">
+        <svg class="b-qmark" viewBox="0 0 24 24" width="32" height="32"><path d="M6 10c0-3 2-6 6-6v3c-2 0-3 1-3 3h3v6H6v-6zm8 0c0-3 2-6 6-6v3c-2 0-3 1-3 3h3v6h-6v-6z" fill="currentColor"/></svg>
+        <p>The best models whisper, they don't shout. Discipline in data beats complexity in the code.</p>
+      </div>
+
+      <div class="b b-interests">
+        <span class="b-i-lbl">Interests &amp; craft</span>
+        <div class="b-i-list">
+          <span>Machine Learning</span>
+          <span>Data Science</span>
+          <span>Web Dev</span>
+          <span>Badminton</span>
+          <span>Community Volunteering</span>
+          <span>Research Writing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ WORK ═════════ -->
+  <section id="work" class="work">
+    <div class="sec-head">
+      <span class="sec-num">( 02 / Selected Work )</span>
+      <h2 class="sec-title">Three projects,<br/>three <em>real</em> problems.</h2>
+    </div>
+
+    <!-- PROJECT 01 -->
+    <article class="proj" data-tilt>
+      <div class="proj-layout">
+        <div class="proj-visual">
+          <div class="mock mock-hr">
+            <div class="mock-bar">
+              <span class="mb-dot r"></span><span class="mb-dot y"></span><span class="mb-dot g"></span>
+              <span class="mb-title">hr_attrition.ipynb</span>
+              <span class="mb-pill">~90% acc</span>
+            </div>
+            <div class="mock-body">
+              <div class="mk-panel mk-stat">
+                <span class="mk-lbl">accuracy</span>
+                <span class="mk-val">0.9042</span>
+                <div class="mk-progress"><div style="width:90%"></div></div>
+              </div>
+              <div class="mk-panel mk-stat">
+                <span class="mk-lbl">precision</span>
+                <span class="mk-val">0.8873</span>
+                <div class="mk-progress"><div style="width:88%"></div></div>
+              </div>
+              <div class="mk-chart">
+                <span class="mk-lbl">feature importance</span>
+                <div class="mk-bars">
+                  <div style="--h:.82"><em>MonthlyIncome</em></div>
+                  <div style="--h:.68"><em>OverTime</em></div>
+                  <div style="--h:.55"><em>Age</em></div>
+                  <div style="--h:.44"><em>JobRole</em></div>
+                  <div style="--h:.31"><em>YearsAtCo</em></div>
+                  <div style="--h:.22"><em>Distance</em></div>
+                </div>
+              </div>
+              <div class="mk-code">
+                <em>rf</em> = RandomForestClassifier(<br/>
+                &nbsp;&nbsp;n_estimators=<span>200</span>,<br/>
+                &nbsp;&nbsp;max_depth=<span>12</span>,<br/>
+                &nbsp;&nbsp;random_state=<span>42</span><br/>
+                )<br/>
+                <em>rf</em>.fit(X_train, y_train)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <span class="proj-num">— 01 / Classification</span>
+          <h3 class="proj-title">HR Analytics <em>—</em> Employee Attrition Prediction</h3>
+          <p class="proj-desc">Decision Tree and Random Forest classifiers trained on IBM's HR Analytics dataset to predict who's most likely to leave, and why. Feature importance revealed <em>compensation</em>, <em>overtime</em>, and <em>tenure</em> as the loudest signals.</p>
+          <div class="proj-tags"><span>Python</span><span>Scikit-learn</span><span>Random Forest</span><span>Decision Tree</span></div>
+          <div class="proj-meta">
+            <div><span>Domain</span>Human Resources</div>
+            <div><span>Dataset</span>IBM HR Analytics</div>
+            <div><span>Accuracy</span>~90%</div>
+            <div><span>Context</span>Academic</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 02 -->
+    <article class="proj" data-tilt>
+      <div class="proj-layout reverse">
+        <div class="proj-visual">
+          <div class="mock mock-water">
+            <div class="mock-bar">
+              <span class="mb-dot r"></span><span class="mb-dot y"></span><span class="mb-dot g"></span>
+              <span class="mb-title">water_quality.py</span>
+              <span class="mb-pill alt">~72% acc</span>
+            </div>
+            <div class="mock-body">
+              <div class="wc-donut">
+                <svg viewBox="0 0 120 120">
+                  <circle cx="60" cy="60" r="48" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="14"/>
+                  <circle cx="60" cy="60" r="48" fill="none" stroke="var(--accent)" stroke-width="14"
+                          stroke-dasharray="217 301.6" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                </svg>
+                <div class="wc-center"><strong>72%</strong><span>potable</span></div>
+              </div>
+              <div class="mk-ds">
+                <div class="mk-ds-row head"><span>Model</span><span>F1</span><span>Roc-AUC</span></div>
+                <div class="mk-ds-row"><span>LogReg</span><span>0.64</span><span>0.71</span></div>
+                <div class="mk-ds-row hl"><span>XGBoost</span><span>0.72</span><span>0.79</span></div>
+                <div class="mk-ds-row"><span>SVM</span><span>0.68</span><span>0.74</span></div>
+              </div>
+              <div class="mk-smote">
+                <span class="mk-lbl">SMOTE: class balance</span>
+                <div class="mk-split">
+                  <div class="s-a" style="width:38%">unsafe</div>
+                  <div class="s-b" style="width:62%">safe</div>
+                </div>
+                <div class="mk-split after">
+                  <div class="s-a" style="width:50%">unsafe</div>
+                  <div class="s-b" style="width:50%">safe</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <span class="proj-num">— 02 / Imbalanced Classification</span>
+          <h3 class="proj-title">Water Quality <em>—</em> Safe Drinking Classifier</h3>
+          <p class="proj-desc">A full ML pipeline for water potability — preprocessing, SMOTE to rebalance minority classes, and a benchmark across Logistic Regression, SVM, and XGBoost. The quiet win was honest reporting of what <em>didn't</em> work.</p>
+          <div class="proj-tags"><span>Python</span><span>XGBoost</span><span>SVM</span><span>SMOTE</span><span>Scikit-learn</span></div>
+          <div class="proj-meta">
+            <div><span>Domain</span>Public Health</div>
+            <div><span>Challenge</span>Class Imbalance</div>
+            <div><span>Accuracy</span>~72%</div>
+            <div><span>Best Model</span>XGBoost</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 03 -->
+    <article class="proj proj-featured" data-tilt>
+      <div class="featured-ribbon">Featured</div>
+      <div class="proj-layout">
+        <div class="proj-visual">
+          <div class="mock mock-recruit">
+            <div class="mock-bar">
+              <span class="mb-dot r"></span><span class="mb-dot y"></span><span class="mb-dot g"></span>
+              <span class="mb-title">recruit_ai · localhost:5000</span>
+              <span class="mb-pill live">live</span>
+            </div>
+            <div class="mock-body rc-body">
+              <div class="rc-head">
+                <span>Live Matches</span>
+                <span class="rc-badge">14 active</span>
+              </div>
+              <div class="rc-row">
+                <span class="rc-avatar a">AK</span>
+                <div class="rc-info">
+                  <strong>Aarav K. <em>→ ML Engineer</em></strong>
+                  <span>Python · TensorFlow · 3y</span>
+                </div>
+                <span class="rc-score hi">94</span>
+              </div>
+              <div class="rc-row">
+                <span class="rc-avatar b">PS</span>
+                <div class="rc-info">
+                  <strong>Priya S. <em>→ Data Scientist</em></strong>
+                  <span>SQL · Tableau · 2y</span>
+                </div>
+                <span class="rc-score md">82</span>
+              </div>
+              <div class="rc-row">
+                <span class="rc-avatar c">RM</span>
+                <div class="rc-info">
+                  <strong>Rohan M. <em>→ Analyst</em></strong>
+                  <span>Excel · SQL · 1y</span>
+                </div>
+                <span class="rc-score lo">71</span>
+              </div>
+              <div class="rc-graph">
+                <svg viewBox="0 0 240 60" preserveAspectRatio="none">
+                  <polyline points="0,40 30,35 60,30 90,22 120,25 150,15 180,18 210,10 240,14"
+                            stroke="var(--accent-2)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                  <polyline points="0,40 30,35 60,30 90,22 120,25 150,15 180,18 210,10 240,14 240,60 0,60"
+                            fill="url(#rcGrad)" opacity="0.4"/>
+                  <defs>
+                    <linearGradient id="rcGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="var(--accent-2)" stop-opacity="0.6"/>
+                      <stop offset="1" stop-color="var(--accent-2)" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span class="rc-g-lbl">match score · week 14</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <span class="proj-num">— 03 / Full AI System</span>
+          <h3 class="proj-title">Real-Time Recruitment AI<em> — </em>Intelligent Job Matching</h3>
+          <p class="proj-desc">End-to-end recruitment intelligence: an AI engine parses candidate profiles and job descriptions to surface the best fits, served through a <em>live Flask dashboard</em> with ranking signals, match scores, and role-fit analytics.</p>
+          <div class="proj-tags"><span>Python</span><span>Flask</span><span>NLP</span><span>Machine Learning</span><span>Analytics</span></div>
+          <div class="proj-meta">
+            <div><span>Domain</span>Recruitment</div>
+            <div><span>Scope</span>End-to-End</div>
+            <div><span>Stack</span>Flask + ML</div>
+            <div><span>Status</span>Academic Build</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ═════════ SKILLS BENTO ═════════ -->
+  <section id="skills" class="skills">
+    <div class="sec-head">
+      <span class="sec-num">( 03 / Toolkit )</span>
+      <h2 class="sec-title">What's in my <em>stack</em>.</h2>
+    </div>
+
+    <div class="sk-bento">
+      <div class="sb sb-main">
+        <span class="sb-head">— Languages &amp; Core</span>
+        <ul class="sb-rank">
+          <li><span class="sbr-rank">01</span><span class="sbr-name">Python</span><span class="sbr-exp">primary</span><span class="sbr-bar"><em style="--w:92%"></em></span></li>
+          <li><span class="sbr-rank">02</span><span class="sbr-name">SQL</span><span class="sbr-exp">daily</span><span class="sbr-bar"><em style="--w:80%"></em></span></li>
+          <li><span class="sbr-rank">03</span><span class="sbr-name">Java</span><span class="sbr-exp">coursework</span><span class="sbr-bar"><em style="--w:72%"></em></span></li>
+          <li><span class="sbr-rank">04</span><span class="sbr-name">C</span><span class="sbr-exp">fundamentals</span><span class="sbr-bar"><em style="--w:65%"></em></span></li>
+        </ul>
+      </div>
+
+      <div class="sb sb-ml">
+        <span class="sb-head">— ML Frameworks</span>
+        <div class="sb-ml-cards">
+          <div class="sbmc"><strong>Scikit-learn</strong><span>classical ML · 90%</span></div>
+          <div class="sbmc"><strong>TensorFlow</strong><span>deep learning · 82%</span></div>
+          <div class="sbmc"><strong>XGBoost</strong><span>gradient boosting · 76%</span></div>
+        </div>
+      </div>
+
+      <div class="sb sb-highlight">
+        <span class="sb-h-lbl">✦ Signature technique</span>
+        <strong class="sb-h-big">SMOTE</strong>
+        <p>Synthetic minority oversampling — my go-to for tackling imbalanced classification datasets honestly.</p>
+      </div>
+
+      <div class="sb sb-tools">
+        <span class="sb-head">— Tools &amp; craft</span>
+        <div class="sb-pills">
+          <span>Flask</span><span>Tableau</span><span>Jupyter</span><span>Git</span>
+          <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+        </div>
+      </div>
+
+      <div class="sb sb-techniques">
+        <span class="sb-head">— Techniques</span>
+        <div class="sb-pills">
+          <span>Classification</span><span>Feature Engineering</span><span>Model Evaluation</span>
+          <span>Data Preprocessing</span><span>SMOTE / Resampling</span><span>Cross-Validation</span>
+          <span>Data Visualisation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ JOURNEY / TIMELINE ═════════ -->
+  <section id="journey" class="journey">
+    <div class="sec-head">
+      <span class="sec-num">( 04 / Journey )</span>
+      <h2 class="sec-title">A short <em>history</em>.</h2>
+    </div>
+
+    <div class="jr-list">
+      <div class="jr active">
+        <div class="jr-year"><span class="jy-big">2023</span><span class="jy-sm">— Now</span></div>
+        <div class="jr-card">
+          <span class="jr-tag">current</span>
+          <h3>Bachelor of Technology, <em>Artificial Intelligence</em></h3>
+          <p class="jr-place">Mahindra University · Bahadurpally, Hyderabad</p>
+          <p class="jr-detail">Core coursework in AI, ML, and data science. Project-based learning. <strong>CGPA 5.2</strong>.</p>
+          <div class="jr-chips">
+            <span>Machine Learning</span><span>Data Structures</span><span>Python</span><span>DBMS</span>
+          </div>
+        </div>
+      </div>
+      <div class="jr">
+        <div class="jr-year"><span class="jy-big">2021</span><span class="jy-sm">— 2023</span></div>
+        <div class="jr-card">
+          <h3>Intermediate <em>— Class XII</em></h3>
+          <p class="jr-place">SR Prime Junior College</p>
+          <p class="jr-detail">Science stream · <strong>69%</strong></p>
+        </div>
+      </div>
+      <div class="jr">
+        <div class="jr-year"><span class="jy-big">2021</span></div>
+        <div class="jr-card">
+          <h3>Secondary <em>— 10th Grade</em></h3>
+          <p class="jr-place">Delhi Public School · Warangal</p>
+          <p class="jr-detail">Secondary Education · <strong>71%</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ CONTACT CTA ═════════ -->
+  <section id="contact" class="contact">
+    <div class="c-bg">
+      <div class="c-orb c-orb-1"></div>
+      <div class="c-orb c-orb-2"></div>
+    </div>
+    <span class="sec-num">( 05 / Say Hello )</span>
+    <h2 class="c-big">
+      <span>Have a project,</span><br/>
+      <span>a role, or just a</span><br/>
+      <span><em>good idea?</em></span>
+    </h2>
+    <a href="mailto:vinuthnadasarapu019@gmail.com" class="c-email">
+      <span>vinuthnadasarapu019@gmail.com</span>
+      <span class="c-arrow">→</span>
+    </a>
+    <div class="c-row">
+      <div class="c-item">
+        <span class="c-i-lbl">Location</span>
+        <span class="c-i-val">Hyderabad, India</span>
+      </div>
+      <div class="c-item">
+        <span class="c-i-lbl">Availability</span>
+        <span class="c-i-val">Internships · Research</span>
+      </div>
+      <div class="c-item">
+        <span class="c-i-lbl">Response</span>
+        <span class="c-i-val">Within 24h</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ FOOTER ═════════ -->
+  <footer>
+    <div class="foot-top">
+      <div class="foot-sig">
+        <span class="fs-name">Vinuthna Dasarapu</span>
+      </div>
+      <div class="foot-links">
+        <span class="fl-lbl">— Connect</span>
+        <a href="mailto:vinuthnadasarapu019@gmail.com">Email <em>↗</em></a>
+        <a href="#top">Top <em>↑</em></a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 · Vinuthna Dasarapu</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
