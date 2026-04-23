@@ -455,10 +455,11 @@ body > *:not(.aurora):not(.noise):not(.vignette):not(.loader) {
   animation-fill-mode: forwards, none;
 }
 .fc-avatar-art {
-  width: 54px; height: 54px;
+  width: 90px; height: 90px;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid var(--line-2);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 20px rgba(255,171,64,0.35);
 }
 .fc-avatar-meta strong {
   display: block;
@@ -740,6 +741,23 @@ body > *:not(.aurora):not(.noise):not(.vignette):not(.loader) {
   pointer-events: none;
 }
 .b:hover::before { opacity: 1; }
+
+.b-photo {
+  grid-column: span 5;
+  grid-row: span 2;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  min-height: 320px;
+  box-shadow: 0 0 40px rgba(255,171,64,0.12);
+  border: 1px solid rgba(255,171,64,0.25);
+}
+.b-photo:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 60px rgba(255,171,64,0.25);
+  transform: translateY(-4px);
+}
 
 .b-lede { grid-column: span 7; grid-row: span 2; padding: 40px; display: flex; flex-direction: column; justify-content: center; gap: 18px; }
 .b-lede p {
